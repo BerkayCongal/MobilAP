@@ -373,5 +373,131 @@
   margin-bottom: 150px;
  }
 }
+/* ----------HOME-------------- */
 
 
+.home-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.home-main {
+  background-color:hsla(40, 100%, 95%, 1) ;
+  padding: 16px;
+  border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    /* --------------- duruma göre  delete */
+}
+
+.history {
+  display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 16px;
+    border: 1px solid #F1F1FA;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.home-account {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
+
+ & p {
+  font-size: 14px;
+  font-weight: 500;
+  color: hsla(240, 7%, 60%, 1);
+  margin-bottom: 8px;
+ }
+ 
+ & h2 {
+  font-size: 35px;
+  font-weight: 600;
+ }
+
+}
+.expenses {
+  display: flex;
+  justify-content: center;
+  color: white;
+  gap: 20px;
+
+  & img {
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 7px 5px;
+  }
+}
+
+.greenbtn {
+  width: 164px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  background-color:hsla(158, 100%, 33%, 1) ;
+  border-radius: 30px;
+ 
+  gap: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+
+
+  & p {
+    font-size: 10px;
+  }
+
+  & span {
+    
+    font-size: 20px;
+  }
+}
+
+
+.redbtn {
+  width: 164px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  background-color:hsla(356, 98%, 61%, 1) ;
+  border-radius: 30px;
+  align-items: center;
+  gap: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+
+
+  & p {
+    font-size: 10px;
+  }
+
+  & span {
+    
+    font-size: 20px;
+  }
+}
+
+.home-top {
+  padding: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.top-text {
+  
+  & h3 {
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+  }
+}

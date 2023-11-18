@@ -1,7 +1,19 @@
 
 import { Link } from "react-router-dom"
+import { useState } from "react";
 
 export default function Signup() {
+    const [password, setPassword] = useState("");
+    const [showPassword, setShotPassword] = useState(true)
+    
+    
+    const handleToggleShow =(e) => {
+        setPassword(e.target.value)
+    }
+    const handleToggleShowPassword = () => {
+        setShotPassword(!showPassword)
+    }
+    
     return(
         <>
             <div className="signup-container">
@@ -10,11 +22,11 @@ export default function Signup() {
                     <h2>Sign Up</h2>
                 </div>
                 <div className="signup-main">
-                    <input type="text" name="name" placeholder="Name" />
-                    <input type="text" name="email" placeholder="Email"/>
+                    <input type="text" name="name" placeholder="Name"  required/>
+                    <input type="email" name="email" placeholder="Email" required/>
                     <div className="password-container">
-                        <input className="signupPassword"  type="text" name="password" placeholder="Password"/>
-                        <img src="/src/img/show.svg" alt="" />
+                    <input className="signupPassword" type={showPassword ? "text" :"password"} value={password} onChange={handleToggleShow} name="password" placeholder="Password" required/>
+                    <img src="/src/img/show.svg" onClick={handleToggleShowPassword}></img> 
                     </div>
                     <div className="checkSignup">
                         <span className="passwordCheckbox"></span>

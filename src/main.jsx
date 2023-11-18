@@ -9,6 +9,7 @@ import Signup from './components/Signup.jsx'
 import Login from './components/Login.jsx'
 import ForgotP from './components/ForgotP.jsx'
 import ForgotEmail from './components/Password/ForgotEmail.jsx'
+import Home from './components/Home.jsx'
 
 const router = createBrowserRouter (
   [
@@ -38,7 +39,12 @@ const router = createBrowserRouter (
        {
         path:"/forgotemail",
         element:<ForgotEmail/>
+       },
+       {
+        path:"/home",
+        element:<Home/>
        }
+
       ]
     }
   ]
